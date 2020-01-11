@@ -1,0 +1,69 @@
+\documentclass[12pt]{report}
+\usepackage{sectsty}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{enumitem}
+\chapterfont{\centering}
+\begin{document}%content to be included in b/w
+	
+	\title{\textbf{latex document}}
+	\author{ICFOSS}
+	\date{15 dec 2019 }
+	\maketitle
+	
+	\chapter{Introduction to Latex}
+	\section*{sect 1}
+	The\textit{first document} is includede in
+		the figure is depicted in \ref{f:smile} 
+		
+	\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.10]{tomandjerry.jpg}
+	\caption{tom and jerry}	
+	\label{f:smile}
+		\end{figure}
+	\begin{center}
+	\begin{tabular}{|c|c|c|}
+		\hline
+		Name & Address & Place\\
+		\hline
+		Rahul & Rahul bahavan & Kollam\\
+		\hline
+		Ram & Ram Nivas & Trivandrum\\
+		\hline
+		Anu & Anu Bhavan & Trissur\\
+		\hline
+	\end{tabular}
+   \end{center}
+
+
+	\subsection{sub 1}
+	here with the following statements.
+\subsubsection{sub 1}
+	\textit{\textbf{The second statement.}}
+	
+	\chapter{Creation}
+	\section*{sect 2}
+	playing football at the ground
+	\section{Listing of elements}
+	\begin{itemize}
+		\item[*] First point
+		\item[-] Second point
+		\item[--]third point
+	\end{itemize}
+\section{Listing of second elements}
+	\begin{enumerate}
+		\item First point
+		\item Second point
+		\item third point
+	\end{enumerate}
+
+	\section{Listing of third elements}
+	\begin{enumerate}[label=\Alph *]
+		\item First point
+		\item Second point
+		\item third point
+	\end{enumerate}
+\end{document}
+
+	

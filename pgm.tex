@@ -1,0 +1,103 @@
+\documentclass[12pt,openany]{book}
+\usepackage{amsmath}
+\usepackage{tikz}
+\usepackage{multicol}
+\begin{document}
+\title{Mathematical typesettings}
+\author{Ramanujan}
+\maketitle
+\chapter{Eqations}
+\section{Inline Mode}
+Equation for finding x:$ x+y=0 $ and $ x^{31} $ 
+
+\section{displayed mode}
+\underline{Unnumbered}\\
+Mass energy equation is stated as $$E=mc^2$$ is discovered in 1905 by Albert.
+\begin{equation}
+E=m
+\end{equation}
+\begin{align}
+x+3y+4z&=2\\
+3y-4z&=5\\
+3&=4
+\end{align}
+\section{\textbf{\textit Unnumbered equation}}
+\begin{align*}
+x+3y+4z&=5\\
+3y-4z&=8\\
+3&=2
+\end{align*}
+\section{Fractions}
+$ \frac{x+3}{4} $
+\section{subscript} 
+$ a_1 $ \\
+$ a_{123} $ 
+\section{superscript}
+$ a^2 $ \\
+$ a^{34} $
+
+\section{matrices}
+1.plain
+$$
+\begin{matrix}
+1 & 2 & 3 \\
+a & b & c
+\end{matrix}
+$$
+\section{matrices}
+1.plain
+$$
+\begin{pmatrix}
+1 & 2 & 3 \\
+a & b & c
+\end{pmatrix}
+$$
+\section{matrices}
+1.plain
+$$
+\begin{bmatrix}
+1 & 2 & 3 \\
+a & b & c
+\end{bmatrix}
+$$
+\section{matrices}
+1.plain
+$$
+\begin{vmatrix}
+1 & 2 & 3 \\
+a & b & c
+\end{vmatrix}
+$$
+\section{display style}
+In line maths element\(f(x)=\frac{1}{1+x}\) can be set with a different style:$ f(x)= \displaystyle \frac{1}{1+x}1 $
+
+\section{drawing lines}
+\begin{tikzpicture}
+\draw (0,0) parabola (4,4);
+\end{tikzpicture}
+
+\vspace{3cm}
+
+\begin{tikzpicture}
+\draw (0,0) rectangle (4,4);
+\end{tikzpicture}
+
+\vspace{3cm}
+
+\begin{tikzpicture}
+\draw (0,0) -- (4,0) -- (4,4) -- (0,4);
+\end{tikzpicture}
+
+\vspace{3cm}
+
+\begin{tikzpicture}
+\draw (5,0) -- (-5,0) 
+      (0,2) -- (0,-2);
+\end{tikzpicture}
+
+\begin{multicols}{2}
+	I love my contry.I love my contry.I love my contry.I love my contry.I love my contry.I love my contry.I love my contry.I love my contry.I love my contry.I love my contry.I love my contry.I love my contry.I love my contry.I love my contry.I love my contry.I love my contry.I love my contry.I love my contry.I love my contry.I love my contry.I love my contry.I love my contry.I love my contry.
+	
+\end{multicols}
+
+\end{document}
